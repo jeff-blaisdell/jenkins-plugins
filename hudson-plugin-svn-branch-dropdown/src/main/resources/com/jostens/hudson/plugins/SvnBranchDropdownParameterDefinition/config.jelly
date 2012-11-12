@@ -1,0 +1,28 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+   <f:entry title="Name" field="name">
+       <f:textbox name="svn_dropdown.name" value="${instance.name}" />
+   </f:entry>
+   <f:entry title="SVN URL" field="svnUrl">
+       <f:textbox name="svn_dropdown.svnUrl" value="${instance.svnUrl}" />
+   </f:entry>
+   <f:entry title="SVN Sub Directories" field="subDirectories">
+       <f:textbox name="svn_dropdown.subDirectories" value="${instance.subDirectories}" />
+   </f:entry>
+   <f:entry title="SVN Username" field="username">
+       <f:textbox name="svn_dropdown.username" value="${instance.username}" />
+   </f:entry>
+   <f:entry title="SVN Password" field="password">
+       <f:password name="svn_dropdown.password" value="${instance.password}" />
+   </f:entry>
+   <f:entry title="Maximum Versions to Display" field="maxVersions">
+       <f:textbox name="svn_dropdown.maxVersions" value="${instance.maxVersions}" />
+   </f:entry>        
+   <f:entry title="Description" field="description">
+       <f:textbox name="svn_dropdown.description" value="${instance.description}" />
+   </f:entry>   
+</j:jelly>

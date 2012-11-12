@@ -1,0 +1,35 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  <f:entry title="Target Directory" field="targetDir">
+      <f:textbox name="deploy.targetDir" value="${instance.targetDir}" />
+  </f:entry>
+
+  <f:entry title="Artifact ID" field="artifactId">
+      <f:textbox name="deploy.artifactId" value="${instance.artifactId}" />
+  </f:entry>
+  
+  <f:entry title="Group ID" field="groupId">
+      <f:textbox name="deploy.groupId" value="${instance.groupId}" />
+  </f:entry>
+  
+  <f:entry title="Version" field="version">
+      <f:textbox name="deploy.version" value="${instance.version}" />
+  </f:entry>
+  
+  <f:entry title="Extension" field="type">
+      <f:textbox name="deploy.type" value="${instance.type}" />
+  </f:entry>
+  
+  <f:entry title="SVN Revision" field="svnRevision">
+      <f:textbox name="deploy.svnRevision" value="${instance.svnRevision}" />
+  </f:entry>
+  
+  <f:entry title="Repository URL" field="repositoryUrl">
+      <f:textbox name="deploy.repositoryUrl" value="${instance.repositoryUrl}" />
+  </f:entry>
+  
+  <f:entry title="Repository ID" field="repositoryId">
+      <f:textbox name="deploy.repositoryId" value="${instance.repositoryId}" />
+  </f:entry>
+  
+</j:jelly>

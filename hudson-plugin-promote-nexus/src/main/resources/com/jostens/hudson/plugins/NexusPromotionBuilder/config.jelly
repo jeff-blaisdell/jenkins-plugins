@@ -1,0 +1,23 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  <f:entry title="Artifact ID" field="artifactId">
+      <f:textbox name="promote.artifactId" value="${instance.artifactId}" />
+  </f:entry>
+  
+  <f:entry title="Release Version" field="releaseVersion">
+      <f:textbox name="promote.releaseVersion" value="${instance.releaseVersion}" />
+  </f:entry>  
+  
+  <f:entry title="Extension" field="type">
+      <f:textbox name="promote.type" value="${instance.type}" />
+  </f:entry>
+  
+  <f:entry title="Repository URL" field="repositoryUrl">
+      <f:textbox name="promote.repositoryUrl" value="${instance.repositoryUrl}" />
+  </f:entry>
+  
+  <f:entry title="Repository ID" field="repositoryId">
+      <f:textbox name="promote.repositoryId" value="${instance.repositoryId}" />
+  </f:entry>
+  
+</j:jelly>

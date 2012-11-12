@@ -1,0 +1,9 @@
+<!--
+  This view is used to render the plugin list page.
+
+  Since we don't really have anything dynamic here, let's just use static HTML. 
+-->
+<div>
+ Provides a build parameter option to setup a project with a dropdown box containing Nexus Repository artifact versions.
+ This plugin will also strip out the version number and set it within the MAVEN_ARTIFACT_VERSION environment variable.
+</div>

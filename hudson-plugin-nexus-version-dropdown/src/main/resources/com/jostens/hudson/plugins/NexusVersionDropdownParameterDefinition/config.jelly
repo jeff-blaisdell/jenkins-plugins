@@ -1,0 +1,28 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+   <f:entry title="Name" field="name">
+       <f:textbox name="nexus_dropdown.name" value="${instance.name}" />
+   </f:entry>
+   <f:entry title="Nexus Repository URL" field="url">
+       <f:textbox name="nexus_dropdown.url" value="${instance.url}" />
+   </f:entry>
+   <f:entry title="Group ID" field="groupId">
+       <f:textbox name="nexus_dropdown.groupId" value="${instance.groupId}" />
+   </f:entry>
+   <f:entry title="Artifact ID" field="artifactId">
+       <f:textbox name="nexus_dropdown.artifactId" value="${instance.artifactId}" />
+   </f:entry>
+   <f:entry title="Repository IDs" field="repoIds">
+       <f:textbox name="nexus_dropdown.repoIds" value="${instance.repoIds}" />
+   </f:entry>
+   <f:entry title="Maximum Versions to Display" field="maxVersions">
+       <f:textbox name="nexus_dropdown.maxVersions" value="${instance.maxVersions}" />
+   </f:entry>        
+   <f:entry title="Description" field="description">
+       <f:textbox name="nexus_dropdown.description" value="${instance.description}" />
+   </f:entry>   
+</j:jelly>

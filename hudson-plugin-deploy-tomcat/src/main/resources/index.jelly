@@ -1,0 +1,8 @@
+<!--
+  This view is used to render the plugin list page.
+
+  Since we don't really have anything dynamic here, let's just use static HTML. 
+-->
+<div>
+ Provides a build step to copy and extract a WAR to a Tomcat server.
+</div>

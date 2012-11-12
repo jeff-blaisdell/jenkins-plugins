@@ -1,0 +1,21 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+   
+   <f:entry title="Tomcat Root Directory" field="tomcatRootDirectory">
+       <f:textbox name="tomcatRootDirectory" value="${instance.tomcatRootDirectory}" />
+   </f:entry>
+   <f:nested>
+     <table>
+       <f:optionalBlock inline="true" name="deployConfiguration" title="Deploy Tomcat Configuration" checked="${instance.deployConfiguration}" >
+           <f:entry title="Configuration Files To Deploy" field="configFilePath">
+               <f:textbox name="configFilePath" value="${instance.configFilePath}" />
+           </f:entry>
+       </f:optionalBlock>
+       <f:optionalBlock inline="true" name="replacePasswords" title="Replace Tomcat Datasource" checked="${instance.replacePasswords}" >
+           <f:entry title="Location Of Password Properties File" field="passwordFilePath">
+               <f:textbox name="passwordFilePath" value="${instance.passwordFilePath}" />
+           </f:entry>  
+       </f:optionalBlock>       
+     </table>
+   </f:nested>  
+  
+</j:jelly>

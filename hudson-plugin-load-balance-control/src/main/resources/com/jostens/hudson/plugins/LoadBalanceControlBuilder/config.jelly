@@ -1,0 +1,20 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  <f:entry title="Web Application Root Directory" field="webAppRootDirectory">
+      <f:textbox name="webAppRootDirectory" value="${instance.webAppRootDirectory}" />
+  </f:entry>
+  
+  <f:entry title="Load Balance Type" field="type">
+      <select name="type">
+          <f:option selected="${'HEARTBEAT' == instance.getType()}" value="HEARTBEAT">Heartbeat</f:option>
+      </select>
+  </f:entry>  
+  
+  <f:entry title="Load Balance Action" field="action">
+      <select name="action">
+          <f:option selected="${'ADD' == instance.getAction()}" value="ADD">Add</f:option>
+          <f:option selected="${'REMOVE' == instance.getAction()}" value="REMOVE">Remove</f:option>
+      </select>
+  </f:entry>    
+  
+</j:jelly>

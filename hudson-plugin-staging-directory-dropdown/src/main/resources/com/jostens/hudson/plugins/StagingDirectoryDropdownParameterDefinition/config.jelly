@@ -1,0 +1,19 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+	<!--
+	This jelly script is used for per-project configuration.
+
+	See global.jelly for a general discussion about jelly script.
+	-->
+	<f:entry title="Name" field="name">
+		<f:textbox name="staging_dir.name" value="${instance.name}" />
+	</f:entry>
+	<f:entry title="Description" field="description">
+		<f:textbox name="staging_dir.description" value="${instance.description}" />
+	</f:entry>
+	<f:entry title="Staging Server Path" field="stagingPath">
+		<f:textbox name="staging_dir.stagingPath" value="${instance.stagingPath}" />
+	</f:entry>
+	<f:entry title="Maximum Versions to Display" field="maxVersions">
+		<f:textbox name="staging_dir.maxVersions" value="${instance.maxVersions}" />
+	</f:entry>
+</j:jelly>
